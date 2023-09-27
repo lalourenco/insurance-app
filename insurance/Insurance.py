@@ -5,11 +5,11 @@ import pandas as pd
 class Insurance:
     
     def __init__(self):
-        self.age_scaler=pickle.load(open('/parameter/age_scaler.pkl','rb'))
-        self.annual_premium_scaler=pickle.load(open('/parameter/annual_premium_scaler.pkl','rb'))
-        self.vintage_scaler=pickle.load(open('/parameter/vintage_scaler.pkl','rb'))
-        self.region_code_encoding=pickle.load(open('/parameter/region_code_encoding.pkl','rb'))
-        self.policy_sales_channel_encoding=pickle.load(open('/parameter/policy_sales_channel_encoding.pkl','rb'))
+        self.age_scaler=pickle.load(open('parameter/age_scaler.pkl','rb'))
+        self.annual_premium_scaler=pickle.load(open('parameter/annual_premium_scaler.pkl','rb'))
+        self.vintage_scaler=pickle.load(open('parameter/vintage_scaler.pkl','rb'))
+        self.region_code_encoding=pickle.load(open('parameter/region_code_encoding.pkl','rb'))
+        self.policy_sales_channel_encoding=pickle.load(open('parameter/policy_sales_channel_encoding.pkl','rb'))
         
     def data_cleaning(self,data):
         columns_name=['id','Gender','Age','Driving_License','Region_Code','Previously_Insured',

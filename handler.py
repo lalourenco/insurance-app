@@ -5,7 +5,7 @@ import numpy as np
 from flask import Flask,request,Response
 from insurance.Insurance import Insurance
 
-model=pickle.load(open('/model/xgb_class.pkl','rb'))
+model=pickle.load(open('model/xgb_class.pkl','rb'))
 
 app=Flask(__name__)
 @app.route('/predict',methods=['POST'])
